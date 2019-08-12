@@ -1,0 +1,34 @@
+# CDI Playground - inject-primitive
+
+This play area illustrated how to use @Produces and @Inject with a more complex types. 
+Specifically, a JSON-B Jsonb type and a pojo bean.  There are four qualifiers and three producers.
+Two of the producers provide a list of Person types for the PeopleBean. One actually reads data from a JSON file using 
+Apache Johnzon while the other provides moch data.
+The third producers produces a Johnzon JSON-B type for accessing people data.
+
+
+
+To build:
+
+    `mvn clean install`
+
+To run:
+
+    `java -cp target/inject-jsonb-1.0.jar Main`
+
+Expected Output:
+
+```
+Person [id=1, first_name=Nike, last_name=Gianotti, email=ngianotti0@samsung.com, gender=Female, ip_address=19.108.136.89]
+Person [id=2, first_name=Octavia, last_name=Pepperell, email=opepperell1@mozilla.org, gender=Female, ip_address=232.76.121.114]
+Person [id=3, first_name=Zia, last_name=Tiddy, email=ztiddy2@netlog.com, gender=Female, ip_address=145.147.77.175]
+Person [id=4, first_name=Elayne, last_name=Sealey, email=esealey3@hibu.com, gender=Female, ip_address=236.199.138.130]
+Person [id=5, first_name=Wilmar, last_name=Stallworthy, email=wstallworthy4@wikipedia.org, gender=Male, ip_address=167.214.94.252]
+Person [id=6, first_name=Rollins, last_name=Haddrill, email=rhaddrill5@is.gd, gender=Male, ip_address=35.223.124.55]
+
+// many more go here ...
+
+Person [id=998, first_name=Effie, last_name=Flatt, email=eflattrp@reverbnation.com, gender=Female, ip_address=120.173.191.224]
+Person [id=999, first_name=Addie, last_name=Pitceathly, email=apitceathlyrq@about.com, gender=Female, ip_address=197.39.73.185]
+Person [id=1000, first_name=Deanna, last_name=Doag, email=ddoagrr@kickstarter.com, gender=Female, ip_address=172.168.171.192]
+```

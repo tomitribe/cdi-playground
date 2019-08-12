@@ -1,0 +1,15 @@
+# CDI Playground - inject-jdbc
+
+This play area is incomplete as it lacks the JDBC connection properties and uses a specific database schema. It's up to the user to set up the databases, MySQL and SQL Server, and configure the connections and the queries to fit the database installed.
+
+    `mvn clean install`
+
+To run:
+
+    `java -cp target/inject-jdbc-1.0.jar Main`
+
+Expected Output:
+
+```
+
+```

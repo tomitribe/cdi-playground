@@ -1,8 +1,7 @@
 # CDI Playground - inject-primitive
 
-To navigate:
+This play area illustrated how to use @Produces and @Inject with primitive types. Specifically, an unqualified int and a qualified double.
 
-    `cd inject-primitive`
 
 To build:
 
@@ -10,10 +9,11 @@ To build:
 
 To run:
 
-    `java -jar target/inject-primitive1.0.jar Main`
+    `java -cp target/inject-primitive-1.0.jar Main`
 
 Expected Output:
 
 ```
-
+The answer is 42
+The value of Pi = 3.141592653
 ```
