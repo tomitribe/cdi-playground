@@ -10,10 +10,11 @@ To build:
 
 To run:
 
-    `java -jar target/inject-primitive1.0.jar Main`
+    `java -cp target/inject-primitive-1.0.jar Main`
 
 Expected Output:
 
 ```
-
+The answer is 42
+The value of Pi = 3.141592653
 ```
