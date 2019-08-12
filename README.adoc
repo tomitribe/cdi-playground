@@ -1,20 +1,11 @@
 # CDI Playground
 
-To navigate:
+This project contains the following maven sub-projects:
 
-    `cd inject-primitive`
+* Under the `inject-primitive` Play with injection of primitive int (no qualifier) and double (two producers and qualifiers).
+* Under the `inject-jsonb` Play with injection of Jsonb type with three producers and four qualifiers. 
+* Under the `inject-Jdbc` Play with injection of JDBC DataSource type with two producers and three qualifiers.
 
-To build:
-
-    `mvn clean install`
-
-To run:
-
-    `java -cp target/inject-primitive-1.0.jar Main`
-
-Expected Output:
-
-```
-The answer is 42
-The value of Pi = 3.141592653
-```
+*To play: 
+1. Navigate to the play area (e.g. `inject-primitive`)
+2. Follow the directions in the README.adoc for that play area
