@@ -1,4 +1,7 @@
-# RMH-OWB-TEST
+# CDI Playground
+
+Navigate to the project you want to play with (e.g. inject-primitive, inject-jsonb)
+    `cd inject-primitive
 
 To build:
 
@@ -6,34 +9,10 @@ To build:
 
 To run:
 
-    `java -jar target/rmh-owb-test-1.0-SNAPSHOT.jar`
+    `java -jar target/inject-primitive1.0.jar Main`
 
 Expected Output:
 
 ```
-Aug 08, 2019 11:05:21 PM org.apache.webbeans.lifecycle.AbstractLifeCycle bootstrapApplication
-INFO: OpenWebBeans Container is starting...
-Aug 08, 2019 11:05:21 PM org.apache.webbeans.corespi.scanner.AbstractMetaDataDiscovery addWebBeansXmlLocation
-INFO: added beans archive URL: jar:file:/Users/jgallimore/dev/WeldTest/target/rmh-owb-test-1.0-SNAPSHOT.jar!/META-INF/beans.xml
-Aug 08, 2019 11:05:21 PM org.apache.webbeans.corespi.scanner.AbstractMetaDataDiscovery addWebBeansXmlLocation
-INFO: added beans archive URL: jar:file:/System/Library/Java/Extensions/MRJToolkit.jar!/
-Aug 08, 2019 11:05:21 PM org.apache.webbeans.corespi.scanner.AbstractMetaDataDiscovery getBeanClassesPerBda
-WARNING: Ignoring class [org.apache.xbean.finder.BundleAnnotationFinder$AnnotationFindingCallback] because it could not be loaded: java.lang.NoClassDefFoundError: org/apache/xbean/osgi/bundle/util/BundleResourceFinder$ResourceFinderCallback
-Aug 08, 2019 11:05:21 PM org.apache.webbeans.corespi.scanner.AbstractMetaDataDiscovery getBeanClassesPerBda
-WARNING: Ignoring class [org.apache.xbean.finder.BundleAnnotationFinder] because it could not be loaded: java.lang.NoClassDefFoundError: org/apache/xbean/osgi/bundle/util/BundleResourceFinder$ResourceFinderCallback
-Aug 08, 2019 11:05:21 PM org.apache.webbeans.corespi.scanner.AbstractMetaDataDiscovery getBeanClassesPerBda
-WARNING: Ignoring class [org.apache.xbean.finder.BundleAssignableClassFinder] because it could not be loaded: java.lang.NoClassDefFoundError: org/apache/xbean/osgi/bundle/util/BundleClassFinder
-Aug 08, 2019 11:05:21 PM org.apache.webbeans.corespi.scanner.AbstractMetaDataDiscovery getBeanClassesPerBda
-WARNING: Ignoring class [org.apache.xbean.finder.archive.BundleArchive$AnnotationFindingCallback] because it could not be loaded: java.lang.NoClassDefFoundError: org/apache/xbean/osgi/bundle/util/BundleResourceFinder$ResourceFinderCallback
-Aug 08, 2019 11:05:21 PM org.apache.webbeans.corespi.scanner.AbstractMetaDataDiscovery getBeanClassesPerBda
-WARNING: Ignoring class [org.apache.xbean.finder.archive.BundleArchive] because it could not be loaded: java.lang.NoClassDefFoundError: org/apache/xbean/osgi/bundle/util/BundleResourceFinder$ResourceFinderCallback
-Aug 08, 2019 11:05:21 PM org.apache.webbeans.corespi.scanner.AbstractMetaDataDiscovery getBeanClassesPerBda
-WARNING: Ignoring class [org.apache.geronimo.osgi.locator.Activator] because it could not be loaded: java.lang.NoClassDefFoundError: org/osgi/framework/BundleActivator
-Aug 08, 2019 11:05:21 PM org.apache.webbeans.corespi.scanner.AbstractMetaDataDiscovery getBeanClassesPerBda
-WARNING: Ignoring class [org.apache.geronimo.osgi.locator.ProviderLocator] because it could not be loaded: java.lang.NoClassDefFoundError: Lorg/osgi/framework/BundleContext;
-Aug 08, 2019 11:05:22 PM org.apache.webbeans.config.BeansDeployer validateInjectionPoints
-INFO: All injection points were validated successfully.
-Aug 08, 2019 11:05:22 PM org.apache.webbeans.lifecycle.AbstractLifeCycle bootstrapApplication
-INFO: OpenWebBeans Container has started, it took [573] ms.
-MyValue = 9
+
 ```
