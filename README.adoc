@@ -1,7 +1,8 @@
 # CDI Playground
 
-Navigate to the project you want to play with (e.g. inject-primitive, inject-jsonb)
-    `cd inject-primitive
+To navigate:
+
+    `cd inject-primitive`
 
 To build:
 
