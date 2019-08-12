@@ -12,7 +12,7 @@ import exp.labs.inject.annotations.People;
 public class PeopleBean {
 	
 	@Inject
-	@People @Moch
+	@People @JsonSource
 	private List<Person> people;
 	
 	public List<Person> listPeople(){
