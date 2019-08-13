@@ -23,8 +23,6 @@ public class Main {
 
 		try(CdiContainer cdi = new CdiContainer()){
 			
-			// your code goes here
-			
 			BasicBean bean = (BasicBean) cdi.getCdiReference(BasicBean.class);
 						
 			System.out.println("The value of Pi = " + bean.myPi);
