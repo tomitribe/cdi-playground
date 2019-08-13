@@ -26,9 +26,7 @@ public class Main {
 			// your code goes here
 			
 			BasicBean bean = (BasicBean) cdi.getCdiReference(BasicBean.class);
-			
-			System.out.println("The answer is " + bean.myValue);
-			
+						
 			System.out.println("The value of Pi = " + bean.myPi);
 			
 		}

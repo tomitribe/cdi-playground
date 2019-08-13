@@ -23,9 +23,6 @@ import exp.labs.inject.annotations.TenDigitPrecision;
 public class BasicBean {
 	
 	@Inject
-	public int myValue;
-	
-	@Inject
 	@Pi @TenDigitPrecision
 	public double myPi;
 	
