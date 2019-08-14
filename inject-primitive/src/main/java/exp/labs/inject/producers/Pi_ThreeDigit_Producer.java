@@ -13,19 +13,19 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-package exp.labs.inject.annotations;
+package exp.labs.inject.producers;
 
-import java.lang.annotation.Retention;
-import java.lang.annotation.Target;
+import javax.enterprise.inject.Produces;
 
-import static java.lang.annotation.ElementType.*;
-import static java.lang.annotation.RetentionPolicy.RUNTIME;
+import exp.labs.inject.annotations.ThreeDigitPi;
 
-import javax.inject.Qualifier;
 
-@Qualifier
-@Target({FIELD, TYPE, METHOD})
-@Retention(RUNTIME)
-public @interface Pi {
+public class Pi_ThreeDigit_Producer {
+
+	@Produces
+	@ThreeDigitPi
+	public double getPi() {
+		return 3.14d;
+	}
 
 }

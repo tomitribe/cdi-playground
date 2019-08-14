@@ -14,17 +14,14 @@ limitations under the License.
 */
 
 package exp.labs.inject.producers;
-
 import javax.enterprise.inject.Produces;
 
-import exp.labs.inject.annotations.Pi;
-import exp.labs.inject.annotations.TenDigitPrecision;
-
+import exp.labs.inject.annotations.TenDigitPi;
 
 public class Pi_TenDigit_Producer{
 	
 	@Produces
-	@Pi @TenDigitPrecision
+	@TenDigitPi
 	public double getPi() {
 		return 3.141592653d;
 	}

@@ -26,6 +26,6 @@ import javax.inject.Qualifier;
 @Qualifier
 @Target({FIELD, TYPE, METHOD})
 @Retention(RUNTIME)
-public @interface JsonSource {
+public @interface ThreeDigitPi{
 
 }

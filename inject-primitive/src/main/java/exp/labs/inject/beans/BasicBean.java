@@ -17,14 +17,12 @@ package exp.labs.inject.beans;
 
 import javax.inject.Inject;
 
-import exp.labs.inject.annotations.Pi;
-import exp.labs.inject.annotations.TenDigitPrecision;
+import exp.labs.inject.annotations.ThreeDigitPi;
 
 public class BasicBean {
 	
 	@Inject
-	@Pi @TenDigitPrecision
+	@ThreeDigitPi
 	public double myPi;
-	
 	
 }
